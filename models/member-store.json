@@ -1,9 +1,11 @@
 {
-  "members": [
+  "memberCollection": [
     {
+      "id": "01",
       "name": "Alvaro",
       "assessments": [
         {
+          "id": "03",
           "weight": "11",
           "chest": "12",
           "thigh": "13",
@@ -14,9 +16,11 @@
       ]
     },
     {
+      "id": "02",
       "name": "Monica",
       "assessments": [
         {
+          "id": "04",
           "weight": "21",
           "chest": "22",
           "thigh": "23",
