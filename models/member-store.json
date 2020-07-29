@@ -1,0 +1,30 @@
+{
+  "members": [
+    {
+      "name": "Alvaro",
+      "assessments": [
+        {
+          "weight": "11",
+          "chest": "12",
+          "thigh": "13",
+          "upperArm": "14",
+          "waist": "15",
+          "hips": "16"
+        }
+      ]
+    },
+    {
+      "name": "Monica",
+      "assessments": [
+        {
+          "weight": "21",
+          "chest": "22",
+          "thigh": "23",
+          "upperArm": "24",
+          "waist": "25",
+          "hips": "26"
+        }
+      ]
+    }
+  ]
+}
