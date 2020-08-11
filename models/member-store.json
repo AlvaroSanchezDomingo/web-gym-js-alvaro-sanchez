@@ -1,40 +1,15 @@
 {
   "memberCollection": [
     {
-      "id": "01",
       "name": "Alvaro",
-      "lastName": "Sanchez",
+      "lastName": "Sanchez Domingo",
+      "gender": "m",
+      "startingWeight": "74.5",
+      "height": "1.25",
       "email": "alvaro@sanchez.com",
       "password": "secret",
-      "assessments": [
-        {
-          "id": "03",
-          "weight": "11",
-          "chest": "12",
-          "thigh": "13",
-          "upperArm": "14",
-          "waist": "15",
-          "hips": "16"
-        }
-      ]
-    },
-    {
-      "name": "rodolfo",
-      "lastName": "chiquilicuatre",
-      "email": "rodolfo@gmail.com",
-      "password": "secret",
-      "id": "891da590-dbb0-11ea-b64e-35271d7c0223",
-      "assessments": [
-        {
-          "id": "9ba17c00-dbb0-11ea-b64e-35271d7c0223",
-          "weight": "6",
-          "chest": "6",
-          "thigh": "6",
-          "upperArm": "6",
-          "waist": "6",
-          "hips": "6"
-        }
-      ]
+      "id": "fbf76dd0-dbe2-11ea-af84-41f2b81dc277",
+      "assessments": []
     }
   ]
 }

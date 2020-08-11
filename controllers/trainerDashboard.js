@@ -18,15 +18,6 @@ const trainerDashboard = {
     memberStore.removeMember(membertId);
     response.redirect('/trainer');
   },
-  addMember(request, response) {
-    const newMember = {
-      id: uuid.v1(),
-      name: request.body.name,
-      assessments: [],
-    };
-    memberStore.addMember(newMember);
-    response.redirect('/trainer');
-  },
 };
 
 module.exports = trainerDashboard;
