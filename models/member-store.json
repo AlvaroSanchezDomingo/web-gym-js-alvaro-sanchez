@@ -3,6 +3,9 @@
     {
       "id": "01",
       "name": "Alvaro",
+      "lastName": "Sanchez",
+      "email": "alvaro@sanchez.com",
+      "password": "secret",
       "assessments": [
         {
           "id": "03",
@@ -16,17 +19,20 @@
       ]
     },
     {
-      "id": "02",
-      "name": "Monica",
+      "name": "rodolfo",
+      "lastName": "chiquilicuatre",
+      "email": "rodolfo@gmail.com",
+      "password": "secret",
+      "id": "891da590-dbb0-11ea-b64e-35271d7c0223",
       "assessments": [
         {
-          "id": "04",
-          "weight": "21",
-          "chest": "22",
-          "thigh": "23",
-          "upperArm": "24",
-          "waist": "25",
-          "hips": "26"
+          "id": "9ba17c00-dbb0-11ea-b64e-35271d7c0223",
+          "weight": "6",
+          "chest": "6",
+          "thigh": "6",
+          "upperArm": "6",
+          "waist": "6",
+          "hips": "6"
         }
       ]
     }

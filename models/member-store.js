@@ -5,7 +5,7 @@ const JsonStore = require('./json-store');
 
 const memberStore  = {
   
-  store: new JsonStore('./member-store.json', { memberCollection: [] }),
+  store: new JsonStore('./models/member-store.json', { memberCollection: [] }),
   memberCollection: 'memberCollection',
   
   getAllMembers() {
@@ -14,6 +14,13 @@ const memberStore  = {
 
   getMember(id) {
     return this.store.findOneBy(this.memberCollection, { id: id });
+  },
+  addMember(member) {
+    this.store.add(this.memberCollection, member);
+    this.store.save();
+  },
+  getMemberByEmail(email) {
+    return this.store.findOneBy(this.memberCollection, { email: email });
   },
   removeAssessment(id, assessmentId) {
     const member = this.getMember(id);
@@ -33,10 +40,7 @@ const memberStore  = {
     member.assessments.push(assessment);
     this.store.save();
   },
-  addMember(member) {
-    this.store.add(this.memberCollection, member);
-    this.store.save();
-  },
+  
 };
                  
 module.exports = memberStore;
