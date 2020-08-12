@@ -1,17 +1,25 @@
 'use strict';
 
 const logger = require('../utils/logger');
+const utility = require('../utils/utility');
 const memberStore = require('../models/member-store.js');
 const uuid = require('uuid');
 
 const memberDashboard = {
   index(request, response) {
     const memberId = request.params.id;
+    const member = memberStore.getMember(memberId);
     const viewData = {
       title: 'Member Data',
-      member: memberStore.getMember(memberId),
+      member: member,
+      currentBMI:utility.testSum(member.startingWeight,member.height),//change this for the actual Current BMI#############################
     };
     response.render('memberDashboard', viewData);
+  },
+  displayCurrent(request, response) {
+    const memberEmail = request.cookies.webgym;
+    const member = memberStore.getMemberByEmail(memberEmail);
+    response.redirect('/member/' + member.id);
   },
    deleteAssessment(request, response) {
     const membertId = request.params.id;

@@ -40,6 +40,11 @@ const memberStore  = {
     member.assessments.push(assessment);
     this.store.save();
   },
+  updateMember(changedMember){
+    let member = this.getMember(changedMember.id);
+    member=changedMember;
+    this.store.save();
+  },
   
 };
                  

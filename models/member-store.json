@@ -9,6 +9,60 @@
       "email": "alvaro@sanchez.com",
       "password": "secret",
       "id": "fbf76dd0-dbe2-11ea-af84-41f2b81dc277",
+      "assessments": [
+        {
+          "id": "b56ac630-dc66-11ea-99ba-b3334e66e898",
+          "weight": "7",
+          "chest": "7",
+          "thigh": "7",
+          "upperArm": "7",
+          "waist": "7",
+          "hips": "7"
+        }
+      ]
+    },
+    {
+      "name": "Monica",
+      "lastName": "Lopez",
+      "gender": "F",
+      "startingWeight": "50",
+      "height": "1.6",
+      "email": "monica@lopez.com",
+      "password": "secret",
+      "id": "6a02a850-dc68-11ea-b27a-bf78f88c0948",
+      "assessments": []
+    },
+    {
+      "name": "ramon",
+      "lastName": "ramon",
+      "gender": "M",
+      "startingWeight": "80",
+      "height": "2",
+      "email": "ramon@ramon.com",
+      "password": "secret",
+      "id": "a824b970-dc68-11ea-b27a-bf78f88c0948",
+      "assessments": []
+    },
+    {
+      "name": "test",
+      "lastName": "test",
+      "gender": "m",
+      "startingWeight": "4",
+      "height": "4",
+      "email": "test@test.com",
+      "password": "secret",
+      "id": "7559f180-dc73-11ea-a1b9-8f81e9118fb0",
+      "assessments": []
+    },
+    {
+      "name": "Alvaro",
+      "lastName": "test",
+      "gender": "m",
+      "startingWeight": "4",
+      "height": "4",
+      "email": "test",
+      "password": "secret",
+      "id": "9cef2710-dc73-11ea-a1b9-8f81e9118fb0",
       "assessments": []
     }
   ]

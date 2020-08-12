@@ -13,11 +13,15 @@ router.get('/signup', accounts.signup);
 router.get('/logout', accounts.logout);
 router.post('/register', accounts.register);
 router.post('/authenticate', accounts.authenticate);
+router.get('/account', accounts.accountIndex);
+router.post('/account/changeName', accounts.changeName);
+
 
 router.get("/trainer", trainerDashboard.index);
 router.get("/trainer/deletemember/:id", trainerDashboard.deleteMember);
 
 router.get('/member/:id', memberDashboard.index);
+router.get('/member', memberDashboard.displayCurrent);
 router.get('/member/:id/deleteassessment/:assessmentid', memberDashboard.deleteAssessment);
 router.post('/member/:id/addassessment', memberDashboard.addAssessment);
 

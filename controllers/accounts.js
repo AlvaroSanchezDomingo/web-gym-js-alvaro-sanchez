@@ -54,9 +54,25 @@ const accounts = {
     }
   },
 
-  getCurrentUser(request) {
-    const memberEmail = request.cookies.member;
+  getCurrentMember(request) {
+    const memberEmail = request.cookies.webgym;
     return memberstore.getMemberByEmail(memberEmail);
+  },
+  accountIndex(request, response){
+    const memberEmail = request.cookies.webgym;
+    const member = memberstore.getMemberByEmail(memberEmail);
+    const viewData = {
+      title: 'Member Data',
+      member: member,
+    };
+    response.render('accountSettings', viewData);
+  },
+  changeName(request, response) {
+    const memberEmail = request.cookies.webgym;
+    let member = memberstore.getMemberByEmail(memberEmail);
+    member.name=request.body.name;
+    memberstore.updateMember(member);
+    response.redirect('/account');
   },
 };
 
