@@ -12,13 +12,20 @@ router.get('/login', accounts.login);
 router.get('/signup', accounts.signup);
 router.get('/logout', accounts.logout);
 router.post('/register', accounts.register);
+router.post('/registerTrainer', accounts.registerTrainer);
 router.post('/authenticate', accounts.authenticate);
 router.get('/account', accounts.accountIndex);
 router.post('/account/changeName', accounts.changeName);
+router.post('/account/changeLastName', accounts.changeLastName);
+router.post('/account/changeGender', accounts.changeGender);
+router.post('/account/changeHeight', accounts.changeHeight);
 
 
-router.get("/trainer", trainerDashboard.index);
+router.get("/trainer/:id", trainerDashboard.index);
+router.get('/trainer', trainerDashboard.displayCurrent);
 router.get("/trainer/deletemember/:id", trainerDashboard.deleteMember);
+router.post('/member/:id/editComment/:assessmentid', trainerDashboard.editComment);
+
 
 router.get('/member/:id', memberDashboard.index);
 router.get('/member', memberDashboard.displayCurrent);

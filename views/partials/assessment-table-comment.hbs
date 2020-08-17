@@ -1,4 +1,5 @@
-<table class="ui table">
+{{#each member.assessments}}
+<table class="ui celled table">
   <thead>
     <tr>
       <th>Weight</th>
@@ -12,7 +13,6 @@
     </tr>
   </thead>
   <tbody>
-    {{#each member.assessments}}
       <tr>
         <td>
           {{weight}}
@@ -41,6 +41,16 @@
           </a>
         </td>
       </tr>
+    </tbody>
+    </table>
+    <h4 class="ui headder">
+      Comment
+    </h4>
+    <form class="ui form" action="/member/{{../member.id}}/editComment/{{id}}" method="POST">
+      <div class="ui field">
+          <input placeholder="Make a comment here" type="text"  name="comment">
+      </div>
+      <button class="ui blue submit button"> Update </button>
+    </form>
     {{/each}}
-  </tbody>
-</table>
+  

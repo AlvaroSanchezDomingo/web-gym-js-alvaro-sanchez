@@ -1,7 +1,8 @@
-{{> menu-trainer id="dashboard"}}
+{{> menu-trainer}}
 <section class="ui center aligned middle aligned segment">
   <h2 class="ui header">
-    {{trainer.name}}
+    {{member.name}}
+    {{currentBMI}}
   </h2>
-  {{> listmembers}}
+  {{> assessment-table-comment}}
 </section>

@@ -24,7 +24,7 @@ const memberStore  = {
   },
   removeAssessment(id, assessmentId) {
     const member = this.getMember(id);
-    const songs = member.assessments;
+    const assessment = member.assessments;
     _.remove(member.assessments, { id: assessmentId });
     this.store.save();
   },
@@ -45,7 +45,7 @@ const memberStore  = {
     member=changedMember;
     this.store.save();
   },
-  
+
 };
                  
 module.exports = memberStore;

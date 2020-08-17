@@ -38,7 +38,9 @@ class JsonStore {
   findByIds(collection, ids) {
     return this.db.get(collection).keyBy('id').at(ids).value();
   }
-
+  findByAIds(collection, ids) {
+    return this.db.get(collection).keyBy('assessments.id').at(ids).value();
+  }
   findBy(collection, filter) {
     return this.db.get(collection).filter(filter).value();
   }

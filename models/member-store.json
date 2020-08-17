@@ -1,69 +1,36 @@
 {
   "memberCollection": [
     {
-      "name": "Alvaro",
+      "name": "Manolito Gafotas",
       "lastName": "Sanchez Domingo",
-      "gender": "m",
+      "gender": "M",
       "startingWeight": "74.5",
-      "height": "1.25",
+      "height": "1.72",
       "email": "alvaro@sanchez.com",
       "password": "secret",
       "id": "fbf76dd0-dbe2-11ea-af84-41f2b81dc277",
       "assessments": [
         {
-          "id": "b56ac630-dc66-11ea-99ba-b3334e66e898",
-          "weight": "7",
-          "chest": "7",
-          "thigh": "7",
-          "upperArm": "7",
-          "waist": "7",
-          "hips": "7"
+          "id": "264f91f0-e0db-11ea-8f58-c574bf7d3286",
+          "weight": "2",
+          "chest": "2",
+          "thigh": "2",
+          "upperArm": "2",
+          "waist": "2",
+          "hips": "2",
+          "comment": "pero bien bien"
         }
-      ]
-    },
+      ],
+      "comment": "new comment"
+    }
+  ],
+  "trainerCollection": [
     {
-      "name": "Monica",
-      "lastName": "Lopez",
-      "gender": "F",
-      "startingWeight": "50",
-      "height": "1.6",
-      "email": "monica@lopez.com",
+      "name": "trainer1",
+      "lastName": "trainer",
+      "email": "trainer",
       "password": "secret",
-      "id": "6a02a850-dc68-11ea-b27a-bf78f88c0948",
-      "assessments": []
-    },
-    {
-      "name": "ramon",
-      "lastName": "ramon",
-      "gender": "M",
-      "startingWeight": "80",
-      "height": "2",
-      "email": "ramon@ramon.com",
-      "password": "secret",
-      "id": "a824b970-dc68-11ea-b27a-bf78f88c0948",
-      "assessments": []
-    },
-    {
-      "name": "test",
-      "lastName": "test",
-      "gender": "m",
-      "startingWeight": "4",
-      "height": "4",
-      "email": "test@test.com",
-      "password": "secret",
-      "id": "7559f180-dc73-11ea-a1b9-8f81e9118fb0",
-      "assessments": []
-    },
-    {
-      "name": "Alvaro",
-      "lastName": "test",
-      "gender": "m",
-      "startingWeight": "4",
-      "height": "4",
-      "email": "test",
-      "password": "secret",
-      "id": "9cef2710-dc73-11ea-a1b9-8f81e9118fb0",
-      "assessments": []
+      "id": "c2a73220-dd79-11ea-921f-a12bb7082fa1"
     }
   ]
 }
