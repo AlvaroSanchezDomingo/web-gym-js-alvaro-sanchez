@@ -16,7 +16,7 @@ const memberDashboard = {
     const viewData = {
       title: 'Member Data',
       member: member,
-      currentBMI:utility.testSum(member.startingWeight,member.height),//change this for the actual Current BMI#############################
+      statistics:utility.MemberStats(member),
     };
     if (memberStore.getMemberByEmail(cookieEmail)){
       response.render('memberDashboard', viewData);

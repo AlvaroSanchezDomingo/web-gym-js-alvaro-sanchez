@@ -1,7 +1,7 @@
 {
   "memberCollection": [
     {
-      "name": "Manolito Gafotas",
+      "name": "Alvaro",
       "lastName": "Sanchez Domingo",
       "gender": "M",
       "startingWeight": "74.5",
@@ -11,14 +11,14 @@
       "id": "fbf76dd0-dbe2-11ea-af84-41f2b81dc277",
       "assessments": [
         {
-          "id": "264f91f0-e0db-11ea-8f58-c574bf7d3286",
-          "weight": "2",
-          "chest": "2",
-          "thigh": "2",
-          "upperArm": "2",
-          "waist": "2",
-          "hips": "2",
-          "comment": "pero bien bien"
+          "id": "a45ad500-e19e-11ea-a039-9fa9ec338aee",
+          "weight": "76",
+          "chest": "65",
+          "thigh": "65",
+          "upperArm": "65",
+          "waist": "65",
+          "hips": "65",
+          "comment": "No comment yet"
         }
       ],
       "comment": "new comment"
