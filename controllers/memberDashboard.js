@@ -42,6 +42,12 @@ const memberDashboard = {
   addAssessment(request, response) {
     const memberId = request.params.id;
     const member = memberStore.getMember(memberId);
+    let trend;
+    if(member.assessments.length>1){
+      trend= request.body.weight < member.assessments[member.assessments.length-1].weight;
+    }else{
+      trend= request.body.weight < member.startingWeight;
+    }
     const newAssessment = {
       id: uuid.v1(),
       weight: request.body.weight,
@@ -50,6 +56,7 @@ const memberDashboard = {
       upperArm: request.body.upperArm,
       waist: request.body.waist,
       hips: request.body.hips,
+      trend: trend,
       comment: 'No comment yet',
     };
     memberStore.addAssessment(memberId, newAssessment);

@@ -30,7 +30,6 @@ const memberStore  = {
   },
   
   removeMember(id) {
-    
     const member = this.getMember(id);
     this.store.remove(this.memberCollection, member);
     this.store.save();

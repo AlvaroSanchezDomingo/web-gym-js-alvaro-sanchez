@@ -9,18 +9,7 @@
       "email": "alvaro@sanchez.com",
       "password": "secret",
       "id": "fbf76dd0-dbe2-11ea-af84-41f2b81dc277",
-      "assessments": [
-        {
-          "id": "a45ad500-e19e-11ea-a039-9fa9ec338aee",
-          "weight": "76",
-          "chest": "65",
-          "thigh": "65",
-          "upperArm": "65",
-          "waist": "65",
-          "hips": "65",
-          "comment": "No comment yet"
-        }
-      ],
+      "assessments": [],
       "comment": "new comment"
     }
   ],
