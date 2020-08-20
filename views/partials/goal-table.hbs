@@ -1,0 +1,36 @@
+<table class="ui table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Measurement</th>
+      <th>Status</th>
+      <th>Missed</th>
+      <th>Achieved</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each member.goals}}
+      <tr>
+        <td>
+          {{date}}
+        </td>
+        <td>
+          {{measurement}}
+        </td>
+        <td>
+          {{status}}
+        </td>
+        <td>
+          <a href="/member/{{../member.id}}/missed/{{id}}" class="ui icon button">
+           <i class="icon trash"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/member/{{../member.id}}/achieve/{{id}}" class="ui icon button">
+           <i class="icon trash"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

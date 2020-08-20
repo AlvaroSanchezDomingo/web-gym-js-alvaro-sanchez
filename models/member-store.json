@@ -2,15 +2,46 @@
   "memberCollection": [
     {
       "name": "Alvaro",
-      "lastName": "Sanchez Domingo",
+      "lastName": "Sanchez",
       "gender": "M",
-      "startingWeight": "74.5",
+      "startingWeight": "74",
       "height": "1.72",
       "email": "alvaro@sanchez.com",
       "password": "secret",
-      "id": "fbf76dd0-dbe2-11ea-af84-41f2b81dc277",
-      "assessments": [],
-      "comment": "new comment"
+      "id": "1524ec40-e333-11ea-a1c7-4f7c5374481c",
+      "assessments": [
+        {
+          "id": "3183a610-e333-11ea-a1c7-4f7c5374481c",
+          "date": "08-20-2020",
+          "weight": "70",
+          "chest": "45",
+          "thigh": "45",
+          "upperArm": "45",
+          "waist": "45",
+          "hips": "45",
+          "trend": true,
+          "comment": "new comment"
+        }
+      ],
+      "goals": [
+        {
+          "id": "20925680-e333-11ea-a1c7-4f7c5374481c",
+          "date": "08-20-2020",
+          "status": "Missed"
+        },
+        {
+          "id": "45f19940-e333-11ea-a1c7-4f7c5374481c",
+          "date": "08-20-2020",
+          "measurement": "empezar ahora",
+          "status": "Missed"
+        },
+        {
+          "id": "6744a290-e333-11ea-a1c7-4f7c5374481c",
+          "date": "08-20-2020",
+          "measurement": "correr un poco",
+          "status": "Missed"
+        }
+      ]
     }
   ],
   "trainerCollection": [

@@ -39,6 +39,11 @@ const memberStore  = {
     member.assessments.push(assessment);
     this.store.save();
   },
+  addGoal(id, goal) {
+    const member = this.getMember(id);
+    member.goals.push(goal);
+    this.store.save();
+  },
   updateMember(changedMember){
     let member = this.getMember(changedMember.id);
     member=changedMember;

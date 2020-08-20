@@ -31,6 +31,7 @@ router.get('/member/:id', memberDashboard.index);
 router.get('/member', memberDashboard.displayCurrent);
 router.get('/member/:id/deleteassessment/:assessmentid', memberDashboard.deleteAssessment);
 router.post('/member/:id/addassessment', memberDashboard.addAssessment);
-
+router.post('/member/:id/addgoal', memberDashboard.addGoal);
+router.get('/member/:id/missed/:goalid', memberDashboard.missedGoal);
 
 module.exports = router;
