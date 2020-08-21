@@ -53,18 +53,24 @@ const accounts = {
     const member = memberstore.getMemberByEmail(request.body.email);
     const trainer = trainerstore.getTrainerByEmail(request.body.email);
     if (member) {
-      response.cookie('webgym', member.email);
-      logger.info(`logging in ${member.email}`);
-      response.redirect('/member/'+member.id);
+      if(member.password===request.body.password){
+        response.cookie('webgym', member.email);
+        logger.info(`logging in ${member.email}`);
+        response.redirect('/member/'+member.id);
+      }else {
+        response.redirect('/login');
+        logger.info(`Member not exist`);
+      }
     } 
     else if(trainer){
-      response.cookie('webgym', trainer.email);
-      logger.info(`logging in ${trainer.email}`);
-      response.redirect('/trainer/'+trainer.id);
-    }
-    else {
-      response.redirect('/login');
-      logger.info(`Member not exist`);
+      if(trainer.password===request.body.password){
+        response.cookie('webgym', trainer.email);
+        logger.info(`logging in ${trainer.email}`);
+        response.redirect('/trainer/'+trainer.id);
+      }else {
+        response.redirect('/login');
+        logger.info(`Member not exist`);
+      }
     }
   },
 
