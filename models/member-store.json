@@ -1,5 +1,56 @@
 {
-  "memberCollection": [],
+  "memberCollection": [
+    {
+      "name": "richard",
+      "lastName": "Sanchez",
+      "gender": "M",
+      "startingWeight": "74",
+      "height": "1.72",
+      "email": "alvaro@sanchez.com",
+      "password": "secret",
+      "id": "b292f720-ec56-11ea-90b2-c579318fec9a",
+      "assessments": [
+        {
+          "id": "c68355e0-ec56-11ea-90b2-c579318fec9a",
+          "date": "09-01-2020",
+          "weight": "71",
+          "chest": "45",
+          "thigh": "45",
+          "upperArm": "45",
+          "waist": "45",
+          "hips": "45",
+          "trend": true,
+          "comment": "well done, keep moving forward"
+        },
+        {
+          "id": "4799db60-ec91-11ea-b818-afac58bdecf2",
+          "date": "09-01-2020",
+          "weight": "70",
+          "chest": "56",
+          "thigh": "56",
+          "upperArm": "56",
+          "waist": "56",
+          "hips": "56",
+          "trend": true,
+          "comment": "well done"
+        }
+      ],
+      "goals": [
+        {
+          "id": "d07b8540-ec56-11ea-90b2-c579318fec9a",
+          "date": "09-01-2020",
+          "measurement": "Get to 68",
+          "status": "Achieved"
+        },
+        {
+          "id": "511c1770-ec91-11ea-b818-afac58bdecf2",
+          "date": "09-01-2020",
+          "measurement": "go for a run",
+          "status": "Achieved"
+        }
+      ]
+    }
+  ],
   "trainerCollection": [
     {
       "name": "trainer1",

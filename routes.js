@@ -33,5 +33,6 @@ router.get('/member/:id/deleteassessment/:assessmentid', memberDashboard.deleteA
 router.post('/member/:id/addassessment', memberDashboard.addAssessment);
 router.post('/member/:id/addgoal', memberDashboard.addGoal);
 router.get('/member/:id/missed/:goalid', memberDashboard.missedGoal);
+router.get('/member/:id/achieve/:goalid', memberDashboard.achieveGoal);
 
 module.exports = router;

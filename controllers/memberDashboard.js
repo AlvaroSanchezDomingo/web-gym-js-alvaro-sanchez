@@ -118,6 +118,22 @@ const memberDashboard = {
     memberStore.updateMember(member);
     response.redirect('/member/' + membertId);
   },
+  achieveGoal(request, response){
+    const membertId = request.params.id;
+    const assessmentId = request.params.goalid;
+    let member = memberStore.getMember(membertId);
+    let index = -1;
+    for (let i=0; i<member.goals.length;i +=1){
+      if(member.goals[i].id=== assessmentId) {
+            index = i;
+            break;
+        }
+    }
+    member.goals[index].status='Achieved';
+    memberStore.updateMember(member);
+    response.redirect('/member/' + membertId);
+  },
+  
 };
 
 module.exports = memberDashboard;

@@ -26,14 +26,6 @@ const trainerStore  = {
     this.store.remove(this.trainerCollection, trainer);
     this.store.save();
   },
-  updateAssessment(changedAssessment){
-    let assessment = this.store.findByIds(this.memberCollection, { id: changedAssessment });
-    assessment=changedAssessment;
-    this.store.save();
-  },
-  getAssessment(assessmentId){
-    return this.store.findByAIds(this.memberCollection, { id: assessmentId });
-  }
   
 };
                  
